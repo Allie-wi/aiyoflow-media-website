@@ -1,0 +1,12 @@
+<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#89d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6FBB9A;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#heroGradient)"/>
+  <circle cx="300" cy="200" r="150" fill="#FEFDF9" opacity="0.3"/>
+  <circle cx="1000" cy="500" r="200" fill="#2d2d2d" opacity="0.1"/>
+  <text x="600" y="300" font-size="48" text-anchor="middle" fill="#FEFDF9" font-weight="bold">Aiyoflow Media</text>
+</svg>

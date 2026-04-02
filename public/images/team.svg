@@ -1,0 +1,7 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#D9F0EC"/>
+  <rect x="30" y="30" width="340" height="340" fill="#4FA377" rx="12"/>
+  <circle cx="200" cy="120" r="50" fill="#FEFDF9" opacity="0.9"/>
+  <rect x="80" y="200" width="240" height="100" fill="#6FBB9A" rx="8"/>
+  <text x="200" y="370" font-size="14" text-anchor="middle" fill="#2d2d2d">Team Collaboration</text>
+</svg>

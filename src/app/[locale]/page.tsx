@@ -63,6 +63,7 @@ export default async function Home(props: PageProps) {
               slug={caseStudy.slug}
               title={caseStudy.title}
               category={caseStudy.category}
+              image={caseStudy.image}
               href={`/${locale}/case-studies/${caseStudy.slug}`}
             />
           ))}

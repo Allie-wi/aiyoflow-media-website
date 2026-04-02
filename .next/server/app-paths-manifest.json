@@ -1,8 +1,7 @@
 {
-  "/[locale]/services/page": "app/[locale]/services/page.js",
-  "/[locale]/case-studies/page": "app/[locale]/case-studies/page.js",
+  "/[locale]/page": "app/[locale]/page.js",
   "/[locale]/case-studies/[slug]/page": "app/[locale]/case-studies/[slug]/page.js",
-  "/[locale]/contact/page": "app/[locale]/contact/page.js",
+  "/[locale]/case-studies/page": "app/[locale]/case-studies/page.js",
   "/[locale]/about/page": "app/[locale]/about/page.js",
-  "/[locale]/page": "app/[locale]/page.js"
+  "/[locale]/contact/page": "app/[locale]/contact/page.js"
 }

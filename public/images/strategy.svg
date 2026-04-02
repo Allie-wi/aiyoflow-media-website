@@ -1,0 +1,7 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#E1F0FF"/>
+  <circle cx="200" cy="200" r="120" fill="#89d4ff" opacity="0.6"/>
+  <circle cx="200" cy="200" r="80" fill="#5BC0DE"/>
+  <circle cx="200" cy="200" r="40" fill="#FEFDF9"/>
+  <text x="200" y="370" font-size="14" text-anchor="middle" fill="#2d2d2d">Strategic Analysis</text>
+</svg>

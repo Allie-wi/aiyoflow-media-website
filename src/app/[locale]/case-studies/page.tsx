@@ -36,6 +36,7 @@ export default async function CaseStudiesPage(props: PageProps) {
               slug={caseStudy.slug}
               title={caseStudy.title}
               category={caseStudy.category}
+              image={caseStudy.image}
               href={`/${locale}/case-studies/${caseStudy.slug}`}
             />
           ))}

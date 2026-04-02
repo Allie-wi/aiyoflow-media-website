@@ -1,0 +1,6 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#E1F0FF"/>
+  <rect x="50" y="50" width="500" height="300" fill="#89d4ff" rx="8"/>
+  <circle cx="300" cy="200" r="60" fill="#FEFDF9" opacity="0.8"/>
+  <text x="300" y="380" font-size="16" text-anchor="middle" fill="#2d2d2d" font-weight="bold">Luxury Brand Launch</text>
+</svg>

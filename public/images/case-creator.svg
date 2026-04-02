@@ -1,0 +1,8 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#F0FAF7"/>
+  <rect x="50" y="50" width="500" height="300" fill="#6FBB9A" rx="8"/>
+  <rect x="100" y="100" width="70" height="70" fill="#D9F0EC" rx="4"/>
+  <rect x="230" y="100" width="70" height="70" fill="#D9F0EC" rx="4"/>
+  <rect x="360" y="100" width="70" height="70" fill="#D9F0EC" rx="4"/>
+  <text x="300" y="380" font-size="16" text-anchor="middle" fill="#2d2d2d" font-weight="bold">Creator Platform</text>
+</svg>

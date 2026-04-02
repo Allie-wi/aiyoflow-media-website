@@ -7,7 +7,7 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-(self["webpackChunk_N_E"] = self["webpackChunk_N_E"] || []).push([["_app-pages-browser_src_content_en_json"],{
+self["webpackHotUpdate_N_E"]("_app-pages-browser_src_content_en_json",{
 
 /***/ "(app-pages-browser)/./src/content/en.json":
 /*!*****************************!*\
@@ -19,4 +19,4 @@ module.exports = /*#__PURE__*/JSON.parse('{"nav":{"home":"Home","services":"Serv
 
 /***/ })
 
-}]);
+});
