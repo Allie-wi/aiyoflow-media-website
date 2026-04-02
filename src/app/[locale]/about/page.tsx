@@ -5,6 +5,7 @@ import Card from '@/components/Card';
 import CTABlock from '@/components/CTABlock';
 import { isValidLocale } from '@/lib/i18n';
 import { notFound } from 'next/navigation';
+import Image from 'next/image';
 
 interface PageProps {
   params: Promise<{ locale: string }>;
@@ -37,6 +38,14 @@ export default async function AboutPage(props: PageProps) {
             </p>
           </div>
           <div className="card">
+            <div className="relative w-full h-64 mb-4 rounded-lg overflow-hidden bg-gradient-soft">
+              <Image
+                src="/images/founder.svg"
+                alt={aboutContent.story.founder.name}
+                fill
+                className="object-cover"
+              />
+            </div>
             <h3 className="text-xl font-bold mb-2">{aboutContent.story.founder.name}</h3>
             <p className="text-sky-500 font-semibold mb-4">{aboutContent.story.founder.role}</p>
             <p className="text-charcoal-800 text-sm leading-relaxed">
