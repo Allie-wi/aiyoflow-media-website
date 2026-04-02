@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST="{\"lib/translations.ts -> @/content/en.json\":{\"id\":\"lib/translations.ts -> @/content/en.json\",\"files\":[\"static/chunks/_app-pages-browser_src_content_en_json.js\"]}}"

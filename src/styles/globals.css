@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design System - Root Layer */
+:root {
+  --color-cream-50: #FEFDF9;
+  --color-cream-100: #FDF8F2;
+  --color-cream-200: #FAF0E5;
+  --color-charcoal-900: #1a1a1a;
+  --color-charcoal-800: #2d2d2d;
+  --color-sky-500: #5BC0DE;
+  --color-sage-500: #4FA377;
+  
+  /* Typography */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+}
+
+/* Base Typography */
+html {
+  font-family: var(--font-body);
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  @apply bg-cream-50 text-charcoal-900 leading-relaxed;
+}
+
+/* Editorial Heading Scale */
+h1 {
+  @apply text-5xl md:text-6xl font-bold leading-tight font-display;
+}
+
+h2 {
+  @apply text-4xl md:text-5xl font-bold leading-tight font-display;
+}
+
+h3 {
+  @apply text-3xl font-semibold leading-snug font-display;
+}
+
+h4 {
+  @apply text-2xl font-semibold font-display;
+}
+
+h5 {
+  @apply text-xl font-semibold font-display;
+}
+
+h6 {
+  @apply text-lg font-semibold font-display;
+}
+
+p {
+  @apply text-base leading-relaxed;
+}
+
+a {
+  @apply text-inherit transition-colors duration-300;
+}
+
+/* Component Classes */
+@layer components {
+  /* Buttons */
+  .btn {
+    @apply inline-block px-6 py-3 font-medium transition-all duration-300 rounded-lg cursor-pointer;
+  }
+
+  .btn-primary {
+    @apply btn bg-charcoal-900 text-cream-50 hover:bg-charcoal-800 shadow-soft hover:shadow-medium;
+  }
+
+  .btn-secondary {
+    @apply btn border-2 border-charcoal-900 text-charcoal-900 hover:bg-charcoal-900 hover:text-cream-50;
+  }
+
+  .btn-gradient {
+    @apply btn bg-gradient-to-r from-sky-500 to-sage-500 text-white hover:shadow-glow;
+  }
+
+  .btn-ghost {
+    @apply btn text-charcoal-900 hover:text-sky-500 border-b-2 border-transparent hover:border-sky-500;
+  }
+
+  /* Cards */
+  .card {
+    @apply bg-white rounded-xl shadow-soft hover:shadow-medium transition-all duration-300 p-6;
+  }
+
+  .card-hover {
+    @apply cursor-pointer hover:translate-y-[-4px];
+  }
+
+  /* Section */
+  .section {
+    @apply py-section px-4 md:px-8;
+  }
+
+  .section-lg {
+    @apply py-section-lg px-4 md:px-8;
+  }
+
+  /* Container */
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+
+  /* Grid */
+  .grid-auto {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+  }
+
+  /* Editorial spacing */
+  .prose-base {
+    @apply text-lg leading-relaxed text-charcoal-800;
+  }
+
+  /* Gradients */
+  .gradient-text {
+    @apply bg-gradient-to-r from-sky-500 to-sage-500 bg-clip-text text-transparent;
+  }
+
+  .gradient-soft-bg {
+    @apply bg-gradient-soft;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.6s ease-out;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection */
+::selection {
+  @apply bg-sky-500 text-cream-50;
+}
+
+/* Focus states for accessibility */
+a:focus-visible,
+button:focus-visible {
+  @apply outline-2 outline-offset-2 outline-sky-500;
+}
+
+/* Language switcher styling */
+.language-switcher {
+  @apply flex gap-2 items-center;
+}
+
+.language-switcher button {
+  @apply px-3 py-1 text-sm font-medium transition-colors duration-300;
+}
+
+.language-switcher button.active {
+  @apply text-sky-500 border-b-2 border-sky-500;
+}
+
+.language-switcher button:not(.active) {
+  @apply text-charcoal-800 hover:text-sky-500;
+}
